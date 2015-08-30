@@ -1,0 +1,19 @@
+
+
+.page-footer 
+{
+  margin-left: 5px;
+  padding: 5px;
+}
+
+@media (max-width: 991px) {
+	.menu_nama
+	{
+		display:none;
+	}
+}
+
+.navbar-top-links .dropdown-messages, .navbar-top-links .dropdown-tasks, .navbar-top-links .dropdown-alerts {
+  width: 150px;
+  min-width: 0;
+}
