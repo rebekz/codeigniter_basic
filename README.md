@@ -53,7 +53,7 @@ Installation
 $assign_to_config['base_url']	= *url_admin_local_anda/public/admin/*
 ```
  
-Contribute
+Structure
 ----------
 
 **Struktur aplikasi:**
@@ -127,54 +127,6 @@ class Main extends MX_Controller {
 	
 }
 ```
-
-**Active Record Class**
-
-Codeigniter menggunakan Active Record pattern untuk retrieve, insert, update database. Disini digunakan class sendiri (MY_Model.php) yang meng-extends class active record-nya code igniter. Isi My_Model :
-
-
-```
-#!php
-
-class MY_Model extends MX_Controller
-{
-    private $tablename = '';
-    
-    function __construct($tablename = false)
-    {
-        parent::__construct();
-        $this->load->database();               
-        $this->load->library('session');
-        
-        if($tablename)
-            $this->tablename = $tablename;
-    }
-
-    function setTableName($tablename) {
-        $this->tablename = $tablename;
-    }
-    
-    function getTableName() {
-        return $this->tablename;
-    }
-    
-    protected function getSomethingBySomething($column, $something, $orderby = false)
-    {
-        $this->db->where($column, $something);
-
-        if($orderby)
-            $this->db->order_by($orderby['key'], $orderby['val']);
-            
-        return $this->db->get($this->tablename);
-    }
-
-   .............
-   .............  
- 
-```
-Selengkapnya bisa dilihat di *application/core/My_Model.php*. Fungsi di class ini bisa digunakan untuk retrieve, insert, update database.
-
-*Note: anda juga bisa menambahkan fungsi-nya*
 
 **Migration**
 
