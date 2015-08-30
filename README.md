@@ -32,7 +32,7 @@ Installation
 * install dari composer
 
 ```
-composer create-project -s:dev rebekz/codeigniter_basic codeigniter
+composer create-project -s:dev rebekz/codeigniter_basic codeigniter_basic
 ``` 
 
 **Step 2**
