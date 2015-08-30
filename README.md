@@ -1,5 +1,4 @@
 # Codeigniter Basic  #
------------------------
 
 Introduction
 ========

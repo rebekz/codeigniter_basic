@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "57bf91d9f43ee75914d1edbc250e242d",
+    "hash": "00bce29fb3ee0fef59472084c9c0db7e",
     "packages": [
         {
             "name": "codeigniter/framework",
@@ -38,7 +38,7 @@
     ],
     "packages-dev": null,
     "aliases": [],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
