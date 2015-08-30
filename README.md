@@ -81,7 +81,7 @@ Contoh module/halaman *main*. Struktur folder-nya:
           * controllers => semua controllers untuk halaman main
           * views => semua view untuk halaman main
 
-**Template dasar controller **
+**Template dasar controller**
  
 
 ```
