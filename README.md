@@ -32,7 +32,7 @@ Installation
 * install dari composer
 
 ```
-#!php
+
 
 composer create-project -s:dev rebekz/codeigniter_basic codeigniter
 ``` 
@@ -42,7 +42,6 @@ composer create-project -s:dev rebekz/codeigniter_basic codeigniter
 * Edit file *index.php* di *public/* lalu rubah:
 
 ```
-#!php
 
  $assign_to_config['base_url']	= *url_local_anda/public/*
 ``` 
@@ -50,7 +49,7 @@ composer create-project -s:dev rebekz/codeigniter_basic codeigniter
 * Edit file *index.php* di *public/admin/* lalu rubah:
 
 ```
-#!php
+
 
 $assign_to_config['base_url']	= *url_admin_local_anda/public/admin/*
 ```
@@ -83,53 +82,6 @@ Contoh module/halaman *main*. Struktur folder-nya:
           * controllers => semua controllers untuk halaman main
           * views => semua view untuk halaman main
 
-**Template dasar controller**
- 
-
-```
-#!php
-
-class Main extends MX_Controller {
-
-	var $active = '';
-	
-
-	function __construct()
-	{	
-		parent::__construct();
-		//define apa aja yang mau di construct
-	}
- 
-	private function _check($method = false)
-	{
-		//fungsi untuk authentifikasi
-	}
-	
-	function index()
-	{
-		
-		//authentication
-		$this->_check(__FUNCTION__);	
-	
-		//fungsi yang pertama dipanggil
-	
-	}
-
-	function show($data = array())
-	{
- 	        //fungsi untuk mengatur tampilan (view)
-
-	}
-
-	function setAssets()
-	 {
-	        //fungsi untuk mengatur assets apa aja yang dipanggil
-	
-	}
-	
-}
-```
-
 **Migration**
 
 Untuk membuat schema database, bisa menggunakan fungsi migration di CI. untuk menambah/merubah schema database, buatlah suatu file di **applications/migrations/** folder dan dinamai dengan format YYYYMMDDHHIISS_<migration_name>.php, dimana YYYYMMDDHHIISS adalah timestamp (20121031100537) migration. untuk contoh file migration bisa lihat fie 20150829163413_create_users_table.php.php
@@ -137,7 +89,7 @@ Untuk membuat schema database, bisa menggunakan fungsi migration di CI. untuk me
 anda juga bisa generate file migration dengan menjalankan command 
 
 ```
-#!php
+
 
 php public/index.php cli matches create:migration [<nama_migration>]
 ```
@@ -148,7 +100,7 @@ untuk migrate schema database ke versi baru dengan perintah
 
 
 ```
-#!php
+
 
 php public/index.php cli matches do:migration 
 ```
@@ -156,7 +108,6 @@ php public/index.php cli matches do:migration
 untuk mundur ke versi lama dengan perintah
 
 ```
-#!php
 
 php public/index.php cli matches undo:migration 
 ```
@@ -167,7 +118,6 @@ php public/index.php cli matches undo:migration
 anda bisa membuat module baru melalui perintah
 
 ```
-#!php
 
 php public/index.php cli matches create:module [<nama_file>] module:[<lokasi_module>].[<nama_module>]
 ```
@@ -176,7 +126,6 @@ contoh:
 
 
 ```
-#!php
 
 php public/index.php cli matches create:module fitra module:back-modules.fitra
 ```
@@ -186,7 +135,6 @@ php public/index.php cli matches create:module fitra module:back-modules.fitra
 anda bisa generate controller baru melalui perintah
 
 ```
-#!php
 
 php public/index.php cli matches create:controller:module [<nama_file>] module:[<lokasi_module>].[<nama_module>]
 ```
@@ -195,7 +143,6 @@ contoh:
 
 
 ```
-#!php
 
 php public/index.php cli matches create:controller:module fitra module:back-modules.fitra
 ```
@@ -205,7 +152,6 @@ php public/index.php cli matches create:controller:module fitra module:back-modu
 anda bisa generate view baru melalui perintah
 
 ```
-#!php
 
 php public/index.php cli matches create:view:module [<nama_file>] module:[<lokasi_module>].[<nama_module>]
 ```
@@ -214,7 +160,6 @@ contoh:
 
 
 ```
-#!php
 
 php public/index.php cli matches create:view:module fitra module:back-modules.fitra
 ```
@@ -224,7 +169,6 @@ php public/index.php cli matches create:view:module fitra module:back-modules.fi
 anda bisa generate model baru melalui perintah
 
 ```
-#!php
 
 php public/index.php cli matches create:model [<nama_file>] 
 ```
@@ -233,7 +177,6 @@ contoh:
 
 
 ```
-#!php
 
 php public/index.php cli matches create:module fitra
 ```
