@@ -32,8 +32,6 @@ Installation
 * install dari composer
 
 ```
-
-
 composer create-project -s:dev rebekz/codeigniter_basic codeigniter
 ``` 
 
@@ -42,15 +40,12 @@ composer create-project -s:dev rebekz/codeigniter_basic codeigniter
 * Edit file *index.php* di *public/* lalu rubah:
 
 ```
-
- $assign_to_config['base_url']	= *url_local_anda/public/*
+$assign_to_config['base_url']	= *url_local_anda/public/*
 ``` 
 
 * Edit file *index.php* di *public/admin/* lalu rubah:
 
 ```
-
-
 $assign_to_config['base_url']	= *url_admin_local_anda/public/admin/*
 ```
  
@@ -89,8 +84,6 @@ Untuk membuat schema database, bisa menggunakan fungsi migration di CI. untuk me
 anda juga bisa generate file migration dengan menjalankan command 
 
 ```
-
-
 php public/index.php cli matches create:migration [<nama_migration>]
 ```
 
@@ -100,15 +93,12 @@ untuk migrate schema database ke versi baru dengan perintah
 
 
 ```
-
-
 php public/index.php cli matches do:migration 
 ```
 
 untuk mundur ke versi lama dengan perintah
 
 ```
-
 php public/index.php cli matches undo:migration 
 ```
 
@@ -118,7 +108,6 @@ php public/index.php cli matches undo:migration
 anda bisa membuat module baru melalui perintah
 
 ```
-
 php public/index.php cli matches create:module [<nama_file>] module:[<lokasi_module>].[<nama_module>]
 ```
 
@@ -126,7 +115,6 @@ contoh:
 
 
 ```
-
 php public/index.php cli matches create:module fitra module:back-modules.fitra
 ```
 
@@ -135,7 +123,6 @@ php public/index.php cli matches create:module fitra module:back-modules.fitra
 anda bisa generate controller baru melalui perintah
 
 ```
-
 php public/index.php cli matches create:controller:module [<nama_file>] module:[<lokasi_module>].[<nama_module>]
 ```
 
@@ -143,7 +130,6 @@ contoh:
 
 
 ```
-
 php public/index.php cli matches create:controller:module fitra module:back-modules.fitra
 ```
 
@@ -152,7 +138,6 @@ php public/index.php cli matches create:controller:module fitra module:back-modu
 anda bisa generate view baru melalui perintah
 
 ```
-
 php public/index.php cli matches create:view:module [<nama_file>] module:[<lokasi_module>].[<nama_module>]
 ```
 
@@ -160,7 +145,6 @@ contoh:
 
 
 ```
-
 php public/index.php cli matches create:view:module fitra module:back-modules.fitra
 ```
 
@@ -169,7 +153,6 @@ php public/index.php cli matches create:view:module fitra module:back-modules.fi
 anda bisa generate model baru melalui perintah
 
 ```
-
 php public/index.php cli matches create:model [<nama_file>] 
 ```
 
@@ -177,7 +160,6 @@ contoh:
 
 
 ```
-
 php public/index.php cli matches create:module fitra
 ```
 
@@ -186,6 +168,8 @@ php public/index.php cli matches create:module fitra
 
 Resources
 -------
+
+Codeiginiter with composer: https://github.com/kenjis/codeigniter-composer-installer
 
 Website template : http://startbootstrap.com/template-overviews/sb-admin-2/
 
