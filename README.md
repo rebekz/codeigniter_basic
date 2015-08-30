@@ -29,14 +29,16 @@ Installation
 
 **Step 1**
 
-* Install local webserver di komputer (WAMP, XAMPP, MAMP)
-* Install SourceTree sebagai Git Client (http://www.sourcetreeapp.com/)
-* Jika anda menggunakan Windows Install Git for Windows (http://git-scm.com/download/win)
-* Clone git repo ini ke local directory 
+* install dari composer
+
+```
+#!php
+
+composer create-project -s:dev rebekz/codeigniter_basic codeigniter
+``` 
 
 **Step 2**
 
-* buatlah database codeigniter_basic lalu setup database setting di *application/config/database.php*
 * Edit file *index.php* di *public/* lalu rubah:
 
 ```
